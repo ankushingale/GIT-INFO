@@ -1,0 +1,16 @@
+What is github-:
+		Its a Version control System
+
+1.Install Git on local machine(Search git setup on chrome and download)
+**Open CMD**
+2.git init(Initializes git)
+3.git status(Sgows status of file)
+4.git add .(all Files){Worling area to strgging area)
+5.git commit -m "message"(To save changes in local repo)
+6.paste link of repo(Connecting to github server)
+7.git push -u origin master(-u writes only one)
+
+git log(Shows Committed data)
+
+
+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
