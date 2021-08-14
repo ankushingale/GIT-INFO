@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="register.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <div class="container register">
+        <form name="RegForm">
+            <div class="row">
+                <div class="col-md-3 register-left">
+                    <!-- <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" /> -->
+                    <!-- <h3>Welcome</h3> -->
+                    <!-- <p>You are 30 seconds away from earning your own money!</p> -->
+                    <!-- <input type="submit" name="" value="Login"/><br/> -->
+                </div>
+                <div class="col-md-9 register-right">
+                    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                        <!-- <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Employee</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Hirer</a>
+                            </li> -->
+                    </ul>
+                    <!-- <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> -->
+                    <h3 class="register-heading">Student Registration</h3>
+                    <div class="row register-form">
+                        <div class="col-md-6">
+                            <div class="form-group"><input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="last name">last_name</label> -->
+                                <input type="text" class="form-control" placeholder="Last_name" id="Lname" />
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <!-- <small>Error message</small> -->
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="password " id="password" />
+
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="confirm password"
+                                    id="password2" />
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="email" id="email" />
+
+                            </div>
+                            <div class="form-group">
+                                <input type="text " class="form-control" placeholder="phoneno" id="phoneno" />
+
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option class="hidden"id="option"> select your department</option>
+                                    <option>Computer</option>
+                                    <option>Mechanical</option>
+                                    <option>Civil</option>
+                                    <option>Information Technology</option>
+                                    <option>Electrical</option>
+                                    <option>Metallurgy</option>
+                                    <option>DDGM</option>
+                                </select>
+                            </div>
+                            <input type="submit" onclick=GEEKFORGEEKS() class="btnRegister" value="Register" />
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <script>
+    function GEEKFORGEEKS() {
+        var name = document.forms["RegForm"]["username"];
+        var Lame = document.forms["RegForm"]["Lname"];	
+        var email = document.forms["RegForm"]["email"];
+        var phoneno = document.forms["RegForm"]["phoneno"];
+        var password = document.forms["RegForm"]["Password"];
+  
+        if (name.value == "") {
+            window.alert("Please enter your first_name.");
+            name.focus();
+            return false;
+        }
+        else if (Lname.value == "") {
+            window.alert("Please enter your last_name.");
+            name.focus();
+            return false;
+        }
+  
+        else if (email.value == "") {
+            window.alert(
+              "Please enter a valid e-mail address.");
+            email.focus();
+            return false;
+        }
+  
+       else  if (phoneno.value == "") {
+            window.alert(
+              "Please enter your telephone number.");
+            phone.focus();
+            return false;
+        }
+  
+        else if (password.value == "") {
+            window.alert("Please enter your password");
+            password.focus();
+            return false;
+        }
+  
+  
+        return true;
+    }
+</script>
+
+</body>
+
+</html>
+
+.register{
+    background: -webkit-linear-gradient(left, #565566, #6aa1b1);
+    margin-top: 3%;
+    padding: 5%;
+}
+.register-left{
+    /* text-align: center; */
+    color: #fff;
+    margin-top: 9%;
+}
+.register-left input{
+    /* border: none; */
+    /* border-radius: 1.5rem; */
+    /* padding: 2%; */
+    /* width: 60%; */
+    /* background: #f8f9fa; */
+    /* font-weight: bold; */
+    /* color: #383d41; */
+    /* margin-top: 30%; */
+    /* margin-bottom: 3%; */
+    cursor: pointer;
+}
+.register-right{
+    background: #f8f9fa;
+    /* border-top-left-radius: 10% 50%; */
+    /* border-bottom-left-radius: 10% 50%; */
+}
+.register-left img{
+    margin-top: 15%;
+    margin-bottom: 5%;
+    /* width: 25%; */
+    /* -webkit-animation: mover 2s infinite  alternate; */
+    /* animation: mover 1s infinite  alternate; */
+}
+@-webkit-keyframes mover {
+    /* 0% { transform: translateY(0); } */
+    /* 100% { transform: translateY(-20px); } */
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+.register-left p{
+    font-weight: lighter;
+    padding: 12%;
+    margin-top: -9%;
+}
+.register .register-form{
+    padding: 10%;
+    margin-top: 10%;
+}
+.btnRegister{
+    float: right;
+    margin-top: 10%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #0062cc;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+.register .nav-tabs{
+    margin-top: 3%;
+    border: none;
+    background: #0062cc;
+    border-radius: 1.5rem;
+    width: 28%;
+    float: right;
+}
+.register .nav-tabs .nav-link{
+    padding: 2%;
+    height: 34px;
+    font-weight: 600;
+    color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.register .nav-tabs .nav-link:hover{
+    border: none;
+}
+.register .nav-tabs .nav-link.active{
+    width: 100px;
+    color: #0062cc;
+    border: 2px solid #0062cc;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+.register-heading{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: -15%;
+    color: #49574e;
+}
+p{
+    text-align: center;
+
+}
+.form-group.success input
+{
+border-color: rgb(26, 206, 238);
+}
+.form-group.success i.fa-check-circle
+{
+    visibility: visible;
+}
